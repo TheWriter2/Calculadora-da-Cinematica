@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>MU - Cinemática - Física</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <label for="logo" class="logo"><a href="index-1.html">Cinemática</a></label>
+      <ul>
+        <li><a href="">Participantes</a></li>
+        <li><a href="">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="convert">
+        <h1 class="tittle">Movimento Uniforme (MU)</h1>
+        <div>
+          <div class="input">
+            <input
+              type="text"
+              name="vlrLast"
+              id="vlrVel"
+              class="result"
+              placeholder="Velocidade (m/s)"
+            />
+          </div>
+
+          <div class="input">
+            <input
+              type="text"
+              name="vlrDistance"
+              id="vlrDistance"
+              class="result"
+              placeholder="Distância (m)"
+            />
+          </div>
+
+          <div class="input">
+            <input
+              type="text"
+              name="vlrTime"
+              id="vlrTime"
+              class="result"
+              placeholder="Tempo (s)"
+            />
+          </div>
+        </div>
+        <div class="action">
+          <input
+            type="submit"
+            value="Calcular"
+            id="calcular"
+            onclick="calcular()"
+          />
+
+          <input type="reset" value="Limpar" id="reset" onclick="limpar()" />
+        </div>
+      </div>
+    </section>
+    <script src="../js/mu.js"></script>
+  </body>
+</html>

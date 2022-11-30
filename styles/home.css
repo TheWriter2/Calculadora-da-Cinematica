@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Press+Start+2P&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #a0a0a0;
+}
+
+nav {
+  background: #fff;
+  width: 100%;
+  height: 8vh;
+}
+
+label.logo a{
+  float: left;
+  color: #000;
+  margin-left: 8vh;
+  letter-spacing: 5px;
+  font-size: 25px;
+  line-height: 8vh;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul {
+  margin-right: 8vh;
+  float: right;
+}
+
+nav ul li {
+  color: #000;
+  display: inline-block;
+  line-height: 8vh;
+  margin-left: 4vh;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav ul li a {
+  color: #000;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px #000 solid;
+  transition: 0.2s ease-in-out;
+}
+
+section{
+    margin: 4vh 3.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.form{
+    padding: 4vh;
+        cursor: pointer;
+    box-shadow: rgb(42, 42, 42) 15px 20px 18px;
+    margin: 0 2vh;
+    text-align: center;
+    border-radius: 20px;
+    background: white;
+    animation: back 1s alternate infinite;
+
+}
+
+.form h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.form:hover{
+    scale: 1.08;
+    transition: ease-in-out .3s;
+}
+
+@keyframes back {
+    0%{
+        background-position-x: 0%;
+    }
+
+    25%{
+        background-position-x: 25%;
+    }
+
+    50%{
+        background-position-x: 50%;
+    }
+
+    75%{
+        background-position-x: 75%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
