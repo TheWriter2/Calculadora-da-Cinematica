@@ -16,11 +16,9 @@
 
   <body>
     <nav>
-      <label for="logo" class="logo"><a href="index-1.html">Cinemática</a></label>
-      <ul>
-        <li><a href="">Participantes</a></li>
-        <li><a href="">Sobre</a></li>
-      </ul>
+      <label for="logo" class="logo">
+        <a href="index-1.html">Cinemática</a>
+      </label>
     </nav>
 
     <section>
@@ -28,52 +26,43 @@
         <h1 class="tittle">Movimento Uniformemente Variado (MUV)</h1>
         <div>
           <div class="input">
+            <label for="vlrAceleration" class="nameVlr"
+              >Aceleração (m/s²)</label
+            >
             <input
               type="number"
               name="vlrAcelera"
               id="vlrAceleration"
               class="result"
-              placeholder="Aceleração (m/s²)"
             />
           </div>
           <div class="input">
+            <label for="vlrDistance" class="nameVlr"
+              >Distância Percorrida (m)</label
+            >
             <input
               type="number"
               name="vlrDistance"
               id="vlrDistance"
               class="result"
-              placeholder="Distância Percorrida (m)"
             />
           </div>
 
           <div class="input">
-            <input
-              type="number"
-              name="vlrFirst"
-              id="vlrFirst"
-              class="result"
-              placeholder="Velocidade Inicial (m/s)"
-            />
+            <label for="vlrFirst" class="nameVlr"
+              >Velocidade Inicial (m/s)</label
+            >
+            <input type="number" name="vlrFirst" id="vlrFirst" class="result" />
           </div>
 
           <div class="input">
-            <input
-              type="number"
-              name="vlrLast"
-              id="vlrLast"
-              class="result"
-              placeholder="Velocidade Final (m/s)"
-            />
+            <label for="vlrLast" class="nameVlr">Velocidade Final (m/s)</label>
+            <input type="number" name="vlrLast" id="vlrLast" class="result" />
           </div>
 
           <div class="input">
-            <input
-              type="number"
-              name="vlrTime"
-              id="vlrTime"
-              class="result"
-              placeholder="Tempo (s)"
-            />
+            <label for="vlrTime" class="nameVlr">Tempo (s)</label>
+            <input type="number" name="vlrTime" id="vlrTime" class="result" />
           </div>
         </div>
         <div class="action">
@@ -88,6 +77,5 @@
         </div>
       </div>
     </section>
-    <script src="../js/muv.js"></script>
   </body>
 </html>

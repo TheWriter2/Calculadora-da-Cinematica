@@ -16,13 +16,12 @@ body {
 nav {
   background: #fff;
   width: 100%;
+  text-align: center;
   height: 8vh;
 }
 
-label.logo a{
-  float: left;
+label.logo a {
   color: #000;
-  margin-left: 8vh;
   letter-spacing: 5px;
   font-size: 25px;
   line-height: 8vh;
@@ -30,76 +29,59 @@ label.logo a{
   font-weight: bold;
 }
 
-nav ul {
-  margin-right: 8vh;
-  float: right;
+section {
+  margin: 4vh 3.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav ul li {
+.form {
+  padding: 4vh;
+  cursor: pointer;
+  box-shadow: rgb(42, 42, 42) 15px 20px 18px;
+  margin: 0 2vh;
+  text-align: center;
+  border-radius: 20px;
+  background: white;
+}
+
+.form h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
   color: #000;
-  display: inline-block;
-  line-height: 8vh;
-  margin-left: 4vh;
-  font-size: 18px;
-  font-weight: 500;
 }
 
-nav ul li a {
-  color: #000;
-}
-
-nav ul li a:hover {
-  border-bottom: 3px #000 solid;
-  transition: 0.2s ease-in-out;
-}
-
-section{
-    margin: 4vh 3.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.form{
-    padding: 4vh;
-        cursor: pointer;
-    box-shadow: rgb(42, 42, 42) 15px 20px 18px;
-    margin: 0 2vh;
-    text-align: center;
-    border-radius: 20px;
-    background: white;
-    animation: back 1s alternate infinite;
-
-}
-
-.form h1{
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #000;
-}
-
-.form:hover{
-    scale: 1.08;
-    transition: ease-in-out .3s;
+.form:hover, .form:active {
+  scale: 1.08;
+  transition: ease-in-out 0.3s;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.6),
+    rgba(0, 255, 0, 0.6),
+    rgba(0, 0, 255, 0.6)
+  );
+  background-size: 500% 100%;
+  animation: back 1s alternate infinite;
 }
 
 @keyframes back {
-    0%{
-        background-position-x: 0%;
-    }
+  0% {
+    background-position-x: 0%;
+  }
 
-    25%{
-        background-position-x: 25%;
-    }
+  25% {
+    background-position-x: 25%;
+  }
 
-    50%{
-        background-position-x: 50%;
-    }
+  50% {
+    background-position-x: 50%;
+  }
 
-    75%{
-        background-position-x: 75%;
-    }
-    100%{
-        background-position-x: 100%;
-    }
+  75% {
+    background-position-x: 75%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
 }

@@ -14,11 +14,9 @@
 
   <body>
     <nav>
-      <label for="logo" class="logo"><a href="index-1.html">Cinemática</a></label>
-      <ul>
-        <li><a href="">Participantes</a></li>
-        <li><a href="">Sobre</a></li>
-      </ul>
+      <label for="logo" class="logo">
+        <a href="index-1.html">Cinemática</a>
+      </label>
     </nav>
 
     <section>
@@ -26,33 +24,23 @@
         <h1 class="tittle">Movimento Uniforme (MU)</h1>
         <div>
           <div class="input">
-            <input
-              type="text"
-              name="vlrLast"
-              id="vlrVel"
-              class="result"
-              placeholder="Velocidade (m/s)"
-            />
+            <label for="vlrVel" class="nameVlr">Velocidade (m/s)</label>
+            <input type="number" name="vlrLast" id="vlrVel" class="result" />
           </div>
 
           <div class="input">
+            <label for="vlrDistance" class="nameVlr">Distância (m)</label>
             <input
-              type="text"
+              type="number"
               name="vlrDistance"
               id="vlrDistance"
               class="result"
-              placeholder="Distância (m)"
             />
           </div>
 
           <div class="input">
-            <input
-              type="text"
-              name="vlrTime"
-              id="vlrTime"
-              class="result"
-              placeholder="Tempo (s)"
-            />
+            <label for="vlrTime" class="nameVlr">Tempo (s)</label>
+            <input type="number" name="vlrTime" id="vlrTime" class="result" />
           </div>
         </div>
         <div class="action">

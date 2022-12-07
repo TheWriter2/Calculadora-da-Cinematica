@@ -16,41 +16,17 @@ body {
 nav {
   background: #fff;
   width: 100%;
+  text-align: center;
   height: 8vh;
 }
 
-label.logo a{
-  float: left;
+label.logo a {
   color: #000;
-  margin-left: 8vh;
   letter-spacing: 5px;
   font-size: 25px;
   line-height: 8vh;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-nav ul {
-  margin-right: 8vh;
-  float: right;
-}
-
-nav ul li {
-  color: #000;
-  display: inline-block;
-  line-height: 8vh;
-  margin-left: 4vh;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-nav ul li a {
-  color: #000;
-}
-
-nav ul li a:hover {
-  border-bottom: 3px #000 solid;
-  transition: 0.2s ease-in-out;
 }
 
 .convert {
@@ -61,7 +37,7 @@ nav ul li a:hover {
   padding: 5vh;
 }
 
-.convert h1.tittle{
+.convert h1.tittle {
   text-align: center;
   font-size: 2rem;
   margin: 5px 20px;
@@ -69,12 +45,18 @@ nav ul li a:hover {
 }
 
 .input {
-  margin: 0 20px;
+  margin: 20px 0;
 }
 
 .action,
 .input {
   text-align: center;
+}
+
+label.nameVlr {
+  display: block;
+  margin: 15px 0 0 0;
+  font-size: 18px;
 }
 
 input.result {
@@ -83,13 +65,13 @@ input.result {
   border: none;
   border-bottom: 2px rgba(0, 0, 0, 0.4) solid;
   background: transparent;
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   outline: none;
   color: #000;
 }
 
-input.result:focus{
+input.result:focus {
   border-bottom: 2px rgb(78, 130, 226) solid;
 }
 
